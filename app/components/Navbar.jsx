@@ -35,7 +35,7 @@ const Navbar = () => {
 
 
     return (
-        <div className='h-20 w-full border-b-2 flex items-center justify-between p-2'>
+        <div className='h-20 w-full border-b-2 flex items-center justify-between p-4 bg-gray-200'>
             <ul className='flex'>
                 <li className='p-2 cursor-pointer'>
                     <Link href={'/'}>Home</Link>
