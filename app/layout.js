@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import Navbar from './components/Navbar';
 import './globals.css';
 import { AuthContextProvider } from './context/AuthContext';
+import Auth from './Auth/auth';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +19,9 @@ export default function RootLayout({ children }) {
         <AuthContextProvider>
 
           <Navbar />
+          <Auth />
           {children}
+
           
         </AuthContextProvider>
       </body>
